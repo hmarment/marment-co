@@ -1,1 +1,1 @@
-web: gunicorn app:app
+web: python marment_io/app.py
