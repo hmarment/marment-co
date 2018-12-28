@@ -6,6 +6,7 @@ authors = ["Henry Marment <henry@adsquare.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.6"
+Flask = "^1.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.0"
