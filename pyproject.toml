@@ -8,6 +8,7 @@ authors = ["Henry Marment <henry@adsquare.com>"]
 python = "^3.6"
 Flask = "^1.0"
 gunicorn = "^19.9"
+Flask-Cors = "^3.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.0"
