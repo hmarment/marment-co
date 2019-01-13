@@ -1,2 +1,1 @@
-web: cd marment_io/client && npm start
-worker: cd marment_io && python app.py
+web: gunicorn marment_io.app:app -b localhost:5000
