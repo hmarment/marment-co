@@ -3,8 +3,8 @@ from flask import render_template
 from flask_cors import CORS
 
 app = Flask(__name__,
-            static_folder="client/dist/static",
-            template_folder="client/dist")
+            static_folder="../client/dist/static",
+            template_folder="../client/dist")
 
 # enable CORS
 CORS(app)

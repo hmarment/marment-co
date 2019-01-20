@@ -1,1 +1,1 @@
-web: gunicorn marment_co.app:app
+web: gunicorn marment_co.server.app:app
