@@ -1,4 +1,4 @@
-from marment_io import __version__
+from marment_co import __version__
 
 
 def test_version():
