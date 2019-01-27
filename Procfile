@@ -1,1 +1,1 @@
-web: gunicorn marment_co.server.app:app
+web: cd marment_co && gunicorn run:app
