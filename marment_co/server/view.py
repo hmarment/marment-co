@@ -5,6 +5,7 @@ from __future__ import with_statement, print_function, absolute_import
 from flask import render_template
 
 from server import app
+from server.ext import github
 
 # entry point for Vue front-end
 @app.route('/')
