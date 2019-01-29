@@ -13,6 +13,8 @@ class GithubProject(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(length=255))
     description = db.Column(db.String(length=255))
+    homepage = db.Column(db.VARCHAR)
+    language = db.Column(db.String(length=255))
     created_at = db.Column(db.DateTime, default=func.now())
     last_modified_at = db.Column(db.DateTime,
                                  onupdate=func.utc_timestamp())

@@ -29,3 +29,4 @@ db = SQLAlchemy(app)
 ma = Marshmallow(app)
 
 import server.view
+import server.projects

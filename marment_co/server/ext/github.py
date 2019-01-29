@@ -26,3 +26,15 @@ def list_github_projects():
     me = g.get_user()
     github_projects = me.get_repos()
     return [project for project in github_projects]
+
+def list_my_github_projects():
+    """
+    Retrieve all projects from Github API written by me
+    """
+    init_github()
+    global g
+    me = g.get_user()
+    github_projects = me.get_repos()
+    return [project for project in github_projects
+            if project.owner.id == me.id
+            and not project.fork]
